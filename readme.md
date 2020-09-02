@@ -60,7 +60,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** -surface plane-
 
-**Je opdracht:** -https://www.bonappetit.com -
+**Je opdracht:** -https://www.bonappetit.com - 
+- Ik weet niet of de website te simpel is, omdat het vaak hetzelfde herhaald.-
 
 **Screenshot(s):**
 
