@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Anoek Balemans-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -38,15 +38,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Na even proberen ging het positioneren met flex goed. Mijn grootste probleem zit het in responsive maken, het ziet er wel goed uit in iphone 5/SE. De positie met em of % worden alsnog lelijk als ik het beeld groter maak. Het stijlen met nth-of-type kreeg ik soms niet voor elkaar, waardoor ik id's moest gebruikem.-
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/header.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/restaurant.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/recipes.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/animatie.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/footer.png) 
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-omstebeurt site bespreken en vragen stellen, hoe je je site responsive kan maken?, hoe je een video toevoegd?, hoe een page snap mogelijk is? en algemen info over wat er verwacht word van de pagina's.-
 
 ### Verslag van meeting
 

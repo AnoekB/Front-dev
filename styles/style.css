@@ -1,5 +1,296 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  margin:0; 
 }
 
+body{
+	height: 220em;
+}
+
+
+header{
+	background-color: black;
+	height:3em;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+}
+
+ ul li:nth-of-type(1) img{
+	width: 1.2em;
+	height: 0.8em;
+	position: absolute;
+	top:1em;
+	left: 1em;
+	z-index: 1;
+}
+
+ ul li:nth-of-type(2) img{
+	width: 9em;
+	height: 3em;
+	position: absolute;
+	left:30%;
+	top: 0.2em;
+}
+
+ ul li:nth-of-type(3) img{
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top:1em;
+	right: 1em;
+}
+
+
+
+article:nth-of-type(1) {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+article:nth-of-type(1) a{
+	font-size: 12px;
+	font-family: futura;
+	padding:0.5em 0.7em 0.5em 0.7em;
+	background-color:#F3AA82;
+	color:black;
+	border: 1px solid black;
+	text-decoration: none;
+	margin:0;
+	max-height: 3em;
+	max-width: 9em;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top:1em;
+	left: 10em;
+
+}
+
+img{
+	margin:0;
+	max-height: 25em;
+	width:100%;
+	display: block;
+	z-index: -1;
+
+}
+
+article:nth-of-type(1) p{
+	padding:2em 4em 2em 4em;
+	margin:0;
+	font-size: 20px;
+	font-family: futura;
+	background-color:#F3AA82;
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+	max-height: 12em;
+
+}
+
+article:nth-of-type(2) img{
+	height: 16em;
+	width: 20em;
+
+}
+
+article:nth-of-type(2) p{
+	padding:2em 4em 2em 4em;
+	margin:0;
+	font-size: 20px;
+	font-family: futura;
+	background-color:#F3AA82;
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+
+
+}
+
+article:nth-of-type(3) {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color:#E2E1E1;
+	height: 26em;
+	z-index: -1;
+
+
+}
+
+
+article:nth-of-type(3) p{
+	padding:1em 1em 1em 1em;
+	margin:0;
+	font-size: 18px;
+	font-family: futura;
+	background-color:white;
+	text-align: center;
+	width: 16em;
+	min-height: 6em;
+	max-height: 12em;
+	position: absolute;
+	left: 5%;
+	top:10em;
+
+
+}
+
+article:nth-of-type(3) img{
+	margin:0;
+	max-height: 25em;
+	width:18em;
+	position: absolute;
+	left: 5%;
+	top:4em;
+
+}
+
+
+article:nth-of-type(4) {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+article:nth-of-type(4) p{
+	padding:1em 2em 3em 2em;
+	margin:0;
+	font-size: 16px;
+	font-family: futura;
+	background-color:#FADA4A;
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+	max-height: 12em;
+}
+
+h2{
+	padding:1.5em 1em 0.5em 1em;
+	margin:0;
+	font-size: 22px;
+	font-family: futura;
+	background-color:#FADA4A;
+	width: 100%;
+	min-height: 3em;
+	max-height: 12em;
+	text-align: center;
+	font-weight: lighter;
+}
+
+
+#recipes{
+	font-size: 12px;
+	font-family: futura;
+	padding:0.5em 0.8em 0.5em 0.8em;
+	background-color:#FADA4A;
+	color:black;
+	text-decoration: none;
+	margin:0;
+	max-height: 3em;
+	max-width: 8em;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top:1em;
+	left: 10.5em;
+}
+
+article:nth-of-type(5) {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+article:nth-of-type(5) a{
+	font-size: 12px;
+	font-family: futura;
+	padding:0.5em 0.7em 0.5em 0.7em;
+	background-color:white;
+	color:black;
+	border: 1px solid black;
+	text-decoration: none;
+	margin:0;
+	max-height: 3em;
+	max-width: 9em;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top:1em;
+	left: 9em;
+
+}
+
+article:nth-of-type(5) p{
+	padding:3em 3em 3em 3em;
+	margin:0;
+	font-size: 20px;
+	font-family: futura;
+	background-color:white;
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+	max-height: 12em;
+}
+
+
+
+article:nth-of-type(6) p{
+	padding:2em 3em 2em 3em;
+	margin:0;
+	font-size: 20px;
+	font-family: futura;
+	background-color:white;
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+	max-height: 12em;
+}
+
+h3{
+	font-size:10px;
+	font-family: futura;
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 3em;
+}
+
+footer {
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+footer a{
+	font-size: 16px;
+	font-family: 'Prata', serif;
+	color:black;
+	text-decoration: none;
+	margin:0;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top:1em;
+	left: 32%;
+
+}
+
+footer p{
+	padding:2em;
+	margin:0;
+	font-size: 14px;
+	font-family: futura;
+	text-align: center;
+	min-height: 8em;
+	max-height: 12em;
+	margin-top: 2em;
+	font-weight: lighter;
+}
