@@ -4,33 +4,61 @@
   margin:0; 
 }
 
-body{
-	height: 220em;
+.home{
+	height: 225em;
 }
 
+.recipe{
+	height: 190em;
+}
 
 header{
 	background-color: black;
 	height:3em;
 	width: 100%;
-	z-index: -1;
-	position: relative;
+	position: fixed;
+	z-index: 2;
 }
 
- ul li:nth-of-type(1) img{
-	width: 1.2em;
-	height: 0.8em;
-	position: absolute;
-	top:1em;
-	left: 1em;
-	z-index: 1;
+ul{
+	list-style-type: none;
+
 }
+ 
+
+ul li div {
+	width: 1.5em;
+ 	height: 0.1em;
+  	background-color: white;
+ 	margin: 0.2em 0;
+ 	margin-left: 0;
+ 	position: absolute;
+	top: 1.2em;
+	left:0.8em;
+
+}
+
+ul li div:before,
+ul li div:after{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top:-8px;
+	width: 1.5em;
+	height: 0.1em;
+	background-color: white;
+}
+
+ul li div:after{
+	top: 8px;
+}
+
 
  ul li:nth-of-type(2) img{
-	width: 9em;
-	height: 3em;
+	width: 8em;
+	height: 2.5em;
 	position: absolute;
-	left:30%;
+	left: calc(50% - 4em);
 	top: 0.2em;
 }
 
@@ -42,16 +70,54 @@ header{
 	right: 1em;
 }
 
+main div{
+	position: fixed;
+	top: 3em;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	visibility: hidden;
+}
+
+div section ul{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	padding:0;
+}
+
+div section ul li{
+	padding-top:1em;
+	padding-bottom: 1em;
+	font-family: 'Mukta', sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-bottom: 0.1em solid lightgrey;
+}
+
+div section ul li:hover {
+	background-color: yellow;
+}
 
 
-article:nth-of-type(1) {
+.toonMenu{
+	visibility: visible;
+}
+
+
+.home article:nth-of-type(1) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
-article:nth-of-type(1) a{
+.home article:nth-of-type(1) a{
 	font-size: 12px;
 	font-family: futura;
 	padding:0.5em 0.7em 0.5em 0.7em;
@@ -60,26 +126,26 @@ article:nth-of-type(1) a{
 	border: 1px solid black;
 	text-decoration: none;
 	margin:0;
-	max-height: 3em;
-	max-width: 9em;
+	height: 2.5em;
 	text-align: center;
 	justify-content: center;
 	position: absolute;
-	top:1em;
-	left: 10em;
+	top:2em;
+	width:8em;
+	right: calc(50% - 4em);
+
 
 }
 
-img{
+.home img{
 	margin:0;
-	max-height: 25em;
 	width:100%;
 	display: block;
 	z-index: -1;
 
 }
 
-article:nth-of-type(1) p{
+.home article:nth-of-type(1) p{
 	padding:2em 4em 2em 4em;
 	margin:0;
 	font-size: 20px;
@@ -92,13 +158,11 @@ article:nth-of-type(1) p{
 
 }
 
-article:nth-of-type(2) img{
+.home article:nth-of-type(2) img{
 	height: 16em;
-	width: 20em;
-
 }
 
-article:nth-of-type(2) p{
+.home article:nth-of-type(2) p{
 	padding:2em 4em 2em 4em;
 	margin:0;
 	font-size: 20px;
@@ -111,7 +175,7 @@ article:nth-of-type(2) p{
 
 }
 
-article:nth-of-type(3) {
+.home article:nth-of-type(3) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
@@ -124,7 +188,7 @@ article:nth-of-type(3) {
 }
 
 
-article:nth-of-type(3) p{
+.home article:nth-of-type(3) p{
 	padding:1em 1em 1em 1em;
 	margin:0;
 	font-size: 18px;
@@ -135,31 +199,31 @@ article:nth-of-type(3) p{
 	min-height: 6em;
 	max-height: 12em;
 	position: absolute;
-	left: 5%;
-	top:10em;
+	left: calc(50% - 8em);
+	top:12em;
 
 
 }
 
-article:nth-of-type(3) img{
+.home iframe{
 	margin:0;
-	max-height: 25em;
-	width:18em;
+	height: 10em;
+	width: 18em;
 	position: absolute;
-	left: 5%;
 	top:4em;
+	left: calc(50% - 9em);
 
 }
 
 
-article:nth-of-type(4) {
+.home article:nth-of-type(4) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
-article:nth-of-type(4) p{
+.home article:nth-of-type(4) p{
 	padding:1em 2em 3em 2em;
 	margin:0;
 	font-size: 16px;
@@ -171,7 +235,7 @@ article:nth-of-type(4) p{
 	max-height: 12em;
 }
 
-h2{
+.home h2{
 	padding:1.5em 1em 0.5em 1em;
 	margin:0;
 	font-size: 22px;
@@ -185,31 +249,31 @@ h2{
 }
 
 
-#recipes{
+.home article:nth-of-type(4) a{
 	font-size: 12px;
 	font-family: futura;
-	padding:0.5em 0.8em 0.5em 0.8em;
+	padding:0.6em 0.8em 0.5em 0.8em;
 	background-color:#FADA4A;
 	color:black;
 	text-decoration: none;
 	margin:0;
-	max-height: 3em;
-	max-width: 8em;
+	height: 2.5em;
 	text-align: center;
 	justify-content: center;
 	position: absolute;
 	top:1em;
-	left: 10.5em;
+	width:8em;
+	right: calc(50% - 4em);
 }
 
-article:nth-of-type(5) {
+.home article:nth-of-type(5) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
-article:nth-of-type(5) a{
+.home article:nth-of-type(5) a{
 	font-size: 12px;
 	font-family: futura;
 	padding:0.5em 0.7em 0.5em 0.7em;
@@ -218,17 +282,16 @@ article:nth-of-type(5) a{
 	border: 1px solid black;
 	text-decoration: none;
 	margin:0;
-	max-height: 3em;
-	max-width: 9em;
+	height: 2.5em;
 	text-align: center;
 	justify-content: center;
 	position: absolute;
 	top:1em;
-	left: 9em;
-
+	width:9em;
+	right: calc(50% - 4.5em);
 }
 
-article:nth-of-type(5) p{
+.home article:nth-of-type(5) p{
 	padding:3em 3em 3em 3em;
 	margin:0;
 	font-size: 20px;
@@ -242,7 +305,7 @@ article:nth-of-type(5) p{
 
 
 
-article:nth-of-type(6) p{
+.home article:nth-of-type(6) p{
 	padding:2em 3em 2em 3em;
 	margin:0;
 	font-size: 20px;
@@ -254,7 +317,7 @@ article:nth-of-type(6) p{
 	max-height: 12em;
 }
 
-h3{
+.home h3{
 	font-size:10px;
 	font-family: futura;
 	text-align: center;
@@ -275,6 +338,7 @@ footer a{
 	color:black;
 	text-decoration: none;
 	margin:0;
+	padding-top:1em;
 	text-align: center;
 	justify-content: center;
 	position: absolute;
@@ -291,6 +355,224 @@ footer p{
 	text-align: center;
 	min-height: 8em;
 	max-height: 12em;
-	margin-top: 2em;
+	margin-top: 3em;
 	font-weight: lighter;
 }
+
+.recipe section:nth-of-type(1) a{
+	font-size: 12px;
+	font-family: futura;
+	padding:0.6em 0.8em 0.5em 0.8em;
+	background-color:#FADA4A;
+	color:black;
+	text-decoration: none;
+	margin:0;
+	height: 2.5em;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top:6em;
+	width:8em;
+	right: calc(50% - 4em);
+}
+
+.recipe section:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+}
+
+.recipe h1{
+	font-size: 36px;
+	font-family: futura;
+	font-weight: lighter;
+	width: 8em;
+	padding:2em 2em 0.5em 2em;
+	margin:0;
+	text-align: center;
+	left: calc(50% - 4em);
+}
+
+.recipe section:nth-of-type(2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+.recipe section:nth-of-type(2) img{
+	width: 6em;
+	height: 1em;
+	
+}
+
+.recipe section:nth-of-type(2) h2{
+	font-size: 14px;
+	font-family: futura;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin:0;
+	text-align: center;
+    font-weight: lighter;
+    background-color:white;
+    padding:0;
+    width:9em;
+    min-height: 2em;
+
+}
+
+.recipe section:nth-of-type(3) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 3em;
+}
+
+.recipe section:nth-of-type(3) img{
+	width: 0.9em;
+	height: 0.8em;
+	
+}
+
+figure img{
+	margin:0;
+	width:100%;
+	display: block;
+	z-index: -1;
+
+}
+
+
+figcaption{
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.recipe article:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-bottom: 0.4em solid black;
+}
+
+.recipe article:nth-of-type(1) p{
+	font-family: 'Radley', serif;
+	font-weight: 100;
+	padding: 1em 1.5em 1em 1.5em;
+	font-size: 18px;
+	text-align: center;
+}
+
+.recipe article:nth-of-type(1) h2{
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.recipe article:nth-of-type(1) a{
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 0.8em;
+}
+
+.recipe article:nth-of-type(2) {
+	background-color:#f8f8f8;
+	border-bottom: 0.4em solid black;
+}
+
+.recipe article:nth-of-type(2) h3{
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+	margin-top: 1.5em; 
+	padding:1em;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding-left:1.5em;
+
+}
+
+.recipe article ol {
+	list-style-type: none;
+	padding:1em;
+	padding-bottom: 4em;
+	margin-bottom: 1.5em;
+
+}
+
+.recipe article:nth-of-type(2) ol li{
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+	padding:0.4em;
+}
+
+.recipe article:nth-of-type(3) {
+	border-bottom: 0.4em solid black;
+}
+
+.recipe article:nth-of-type(3) h3{
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	margin-top: 1.5em; 
+	padding:1em;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	padding-left:1.5em;
+}
+
+.recipe article:nth-of-type(3) p{
+	font-family: 'Radley', serif;
+	font-size: 17px;
+	padding: 1em 1.5em 1em 1.5em;
+	font-weight: lighter;
+	line-height: 1.8em;
+
+}
+
+.recipe h4:nth-of-type(1) {
+	font-size: 14px;
+	padding: 2em 1.5em 2em 1.5em;
+	font-family: 'Nunito', sans-serif;
+	border-bottom: 0.4em solid black;
+}
+
+.recipe article:nth-of-type(4) {
+	border-bottom: 0.4em solid black;
+}
+
+.recipe article:nth-of-type(4) h3{
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	padding:2em 1em 2em 1em;
+	text-transform: capitalize;
+	padding-left:1.5em;
+}
+
+.recipe iframe{
+	width:100%;
+	height: 10em;
+}
+
+
+
+.recipe article:nth-of-type(4) h5{
+	font-size: 24px;
+	font-weight: bolder;
+	text-align: center;
+	background-color: #f8f8f8;
+	padding: 1em 1.5em 1em 1.5em;
+	margin-bottom: 2.5em;
+	font-family: 'Nunito', sans-serif;
+}
+
+ 
