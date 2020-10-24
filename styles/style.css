@@ -12,20 +12,106 @@
 	height: 190em;
 }
 
+main{
+	margin-top: 2em;
+}
+
 header{
 	background-color: black;
 	height:3em;
 	width: 100%;
 	position: fixed;
 	z-index: 2;
+	top:0;
 }
 
 ul{
 	list-style-type: none;
-
 }
  
+/* plus extra menu */ 
 
+ .fetuccini {
+	visibility: hidden; 
+	background-color: #FADA4A;
+	height: 0;
+}
+
+
+.hamburgermenu .fetuccini li a{
+	padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 0.1em;
+	font-size: 16px;
+	font-family: 'Mukta', sans-serif;
+	font-weight: lighter;
+	text-transform: capitalize;
+	background-color: #FADA4A;
+	text-decoration: none;
+	color: black;
+
+}
+
+
+
+.plusButton div {
+	content: initial ;
+	width: 1em;
+ 	height: 0.1em;
+  	background-color: black;
+ 	margin: 0.2em 0;
+ 	margin-left: 0;
+ 	position: absolute;
+ 	right: 2em;
+ 	left: calc(90% - 1em);
+ 	top: 1.6em;
+ 	transition: none;
+ 	
+}
+
+.toonMenu .plusButton {
+	visibility: visible;
+}
+
+.plusButton div:before {
+	width: 1em;
+ 	height: 0.1em;
+  	background-color: black;
+ 	margin-left: 0;
+ 	position: absolute;
+ 	right: 1em;
+ 	left: calc(98% - 1em);
+ 	top: 0em;
+ 	transform: rotate(90deg);
+ 	transition: none;
+}
+
+.plusButton div:after{
+	visibility: hidden;
+} 
+
+.toonOptie {
+	visibility: visible;
+	height: 4em;
+	z-index: 2;
+	border-bottom: none;
+}
+
+.minMenu .plusButton{
+	border-bottom: none;
+}
+
+.minMenu div:before{
+	visibility: hidden;
+	
+}
+
+.minMenu .toonOptie {
+	visibility: hidden;
+}
+
+
+/* hamburger menu */ 
 ul li div {
 	width: 1.5em;
  	height: 0.1em;
@@ -35,6 +121,8 @@ ul li div {
  	position: absolute;
 	top: 1.2em;
 	left:0.8em;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
 
 }
 
@@ -47,6 +135,7 @@ ul li div:after{
 	width: 1.5em;
 	height: 0.1em;
 	background-color: white;
+	transition: all 0.5s ease-in-out;
 }
 
 ul li div:after{
@@ -70,7 +159,7 @@ ul li div:after{
 	right: 1em;
 }
 
-main div{
+main div {
 	position: fixed;
 	top: 3em;
 	left: 0;
@@ -78,7 +167,7 @@ main div{
 	width: 100%;
 	background-color: white;
 	z-index: 1;
-	visibility: hidden;
+	visibility: hidden; 
 }
 
 div section ul{
@@ -87,6 +176,7 @@ div section ul{
 	justify-content: center;
 	flex-direction: column;
 	padding:0;
+	width: 100%;
 }
 
 div section ul li{
@@ -98,10 +188,34 @@ div section ul li{
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	border-bottom: 0.1em solid lightgrey;
+
+
+}
+
+div section ul li:nth-of-type(2) {
+	border-top: 0.1em solid lightgrey;
+}
+
+div section ul li:nth-of-type(1) {
+	border-bottom: none;
 }
 
 div section ul li:hover {
-	background-color: yellow;
+	background-color: #FADA4A;
+}
+
+.kruisMenu div {
+	background-color:transparent;
+}
+
+.kruisMenu div:before{
+	transform: rotate(45deg) translate(0.5em, 0.5em);
+	transition: all .5s ease; 
+}
+
+.kruisMenu div:after{
+	transform: rotate(-45deg) translate(0.2em, -0.2em);
+	transition: all .5s ease; 
 }
 
 
@@ -110,11 +224,21 @@ div section ul li:hover {
 }
 
 
+
+
+.toonMenu ul li div{
+	visibility: visible;
+}
+
+
+/* Home-pagina */
+
 .home article:nth-of-type(1) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+
 }
 
 .home article:nth-of-type(1) a{
@@ -134,7 +258,38 @@ div section ul li:hover {
 	width:8em;
 	right: calc(50% - 4em);
 
+}
 
+.home article:nth-of-type(1) a:hover {
+	background-color: #86a9f3;
+}
+
+.home article:nth-of-type(1) a:focus {
+	border: 2px solid #f47952; 
+}
+
+.home article:nth-of-type(2){
+	position: relative;
+}
+
+.home h4{
+	padding: 0.5em;
+	background-color: #86a9f3;
+	font-size: 12px;
+	font-family: futura;
+	width: 8em;
+	height: 5em;
+	text-align: center;
+	position: absolute;
+	top:8em;
+	left: calc( 50% - 4em);
+	transition: .5s ease;
+  	opacity: 0;
+}
+
+.home article:nth-of-type(2):hover h4 {
+	opacity: 1;
+	z-index: 1;
 }
 
 .home img{
@@ -142,6 +297,15 @@ div section ul li:hover {
 	width:100%;
 	display: block;
 	z-index: -1;
+	transition: .5s ease;
+ 	backface-visibility: hidden;
+ 	opacity: 1;
+
+}
+
+.home article:nth-of-type(2):hover img {
+	opacity: 0.5;
+	transition:  0.5s ease-in-out;
 
 }
 
@@ -161,6 +325,8 @@ div section ul li:hover {
 .home article:nth-of-type(2) img{
 	height: 16em;
 }
+
+
 
 .home article:nth-of-type(2) p{
 	padding:2em 4em 2em 4em;
@@ -266,6 +432,14 @@ div section ul li:hover {
 	right: calc(50% - 4em);
 }
 
+.home article:nth-of-type(4) a:hover{
+	background-color: #86a9f3;
+}
+
+.home article:nth-of-type(4) a:focus {
+	border: 2px solid #f47952; 
+}
+
 .home article:nth-of-type(5) {
 	margin:0;
 	display: flex;
@@ -289,6 +463,14 @@ div section ul li:hover {
 	top:1em;
 	width:9em;
 	right: calc(50% - 4.5em);
+}
+
+.home article:nth-of-type(5) a:hover{
+	background-color: #86a9f3;
+}
+
+.home article:nth-of-type(5) a:focus {
+	border: 2px solid #f47952; 
 }
 
 .home article:nth-of-type(5) p{
@@ -376,6 +558,14 @@ footer p{
 	right: calc(50% - 4em);
 }
 
+.recipe section:nth-of-type(1) a:hover{
+	background-color: #86a9f3;
+}
+
+.recipe section:nth-of-type(1) a:focus {
+	border: 2px solid #f47952; 
+}
+
 .recipe section:nth-of-type(1) {
 	display: flex;
 	justify-content: center;
@@ -428,9 +618,25 @@ footer p{
 }
 
 .recipe section:nth-of-type(3) img{
-	width: 0.9em;
-	height: 0.8em;
+	width: 12px;
+	height: 18px;
 	
+}
+
+.recipe section img:nth-of-type(2) {
+	width: 16px;
+	height: 18px;
+}
+
+
+.recipe section img:nth-of-type(3) {
+	width: 19px;
+	height: 18px;
+}
+
+.recipe section img:nth-of-type(4) {
+	width: 22px;
+	height: 18px;
 }
 
 figure img{
