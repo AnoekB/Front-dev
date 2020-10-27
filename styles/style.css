@@ -9,7 +9,7 @@
 }
 
 .recipe{
-	height: 190em;
+	height: 180em;
 }
 
 main{
@@ -32,9 +32,12 @@ ul{
 /* plus extra menu */ 
 
  .fetuccini {
+ 	position: relative;
 	visibility: hidden; 
-	background-color: #FADA4A;
+	background-color: transparent;
 	height: 0;
+	color: black;
+
 }
 
 
@@ -46,12 +49,22 @@ ul{
 	font-family: 'Mukta', sans-serif;
 	font-weight: lighter;
 	text-transform: capitalize;
-	background-color: #FADA4A;
+	background-color: transparent;
 	text-decoration: none;
-	color: black;
+	color: transparent;
 
 }
 
+
+.toonMenu .fetuccini li a{
+	color: black;
+	background-color: #FADA4A;
+}
+
+.toonMenu .fetuccini {
+	color: black;
+	background-color: #FADA4A;
+}
 
 
 .plusButton div {
@@ -80,7 +93,7 @@ ul{
  	margin-left: 0;
  	position: absolute;
  	right: 1em;
- 	left: calc(98% - 1em);
+ 	left: calc(97% - 0.95em);
  	top: 0em;
  	transform: rotate(90deg);
  	transition: none;
@@ -90,7 +103,8 @@ ul{
 	visibility: hidden;
 } 
 
-.toonOptie {
+
+.toonMenu .toonOptie {
 	visibility: visible;
 	height: 4em;
 	z-index: 2;
@@ -218,13 +232,10 @@ div section ul li:hover {
 	transition: all .5s ease; 
 }
 
-
 .toonMenu{
 	visibility: visible;
+	z-index: 2;
 }
-
-
-
 
 .toonMenu ul li div{
 	visibility: visible;
@@ -233,11 +244,14 @@ div section ul li:hover {
 
 /* Home-pagina */
 
+
+
 .home article:nth-of-type(1) {
 	margin:0;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	z-index: 1;
 
 }
 
@@ -541,7 +555,11 @@ footer p{
 	font-weight: lighter;
 }
 
-.recipe section:nth-of-type(1) a{
+
+
+/* tweede pagina */
+
+.recipe #recipeAStyling {
 	font-size: 12px;
 	font-family: futura;
 	padding:0.6em 0.8em 0.5em 0.8em;
@@ -558,11 +576,13 @@ footer p{
 	right: calc(50% - 4em);
 }
 
-.recipe section:nth-of-type(1) a:hover{
+
+
+#recipeAStyling:hover{
 	background-color: #86a9f3;
 }
 
-.recipe section:nth-of-type(1) a:focus {
+#recipeAStyling:focus {
 	border: 2px solid #f47952; 
 }
 
@@ -768,7 +788,6 @@ figcaption{
 	width:100%;
 	height: 10em;
 }
-
 
 
 .recipe article:nth-of-type(4) h5{

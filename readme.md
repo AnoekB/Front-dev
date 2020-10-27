@@ -6,20 +6,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. -Appetit, B. (2020, 26 oktober). Bon Appétit Magazine: Recipes, Cooking, Entertaining, Restaurants. Geraadpleegd op 27 oktober 2020, van https://www.bonappetit.com -
+2. - M. (2015). Gin and juice fizz [foto]. Geraadpleegd van https://almostmakesperfect.com/2015/06/30/gin-and-juice-fizz/ -
+3. -WHERE TO EAT AND DRINK IN KANSAS CITY. (z.d.). [foto]. Geraadpleegd van https://thetasteedit.com/where-to-eat-and-drink-in-kansas-city/ -
+4. - L. (z.d.). Date night mushroom fettuccine [foto]. Geraadpleegd van https://pinchofyum.com/mushroom-fettuccine -
+5. - tubik.arts. (2019). Mexican Food Illustration [illustratie]. Geraadpleegd van https://dribbble.com/shots/8517286-Mexican-Food-Illustration?utm_source=pinterest&utm_campaign=pinterest_shot&utm_content=Mexican%20Food%20Illustration&utm_medium=Social_Share -
+6. - Bon Appétit. (2020, 27 april). Sohla Makes Lamb & Scallion Dumplings | From the Home Kitchen | Bon Appétit. Geraadpleegd op 27 oktober 2020, van https://www.youtube.com/watch?v=kKzg4La4C3Q -
+7. - Bon Appétit. (2018, 24 maart). Carla Makes BA’s Best Fettuccine Alfredo | From the Test Kitchen | Bon Appétit. Geraadpleegd op 27 oktober 2020, van https://www.youtube.com/watch?v=BB6ZCkvg39k -
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+-Van de hele site was het moeilijkst om te maken het menu, vooral doordat ik een extra menu in het menu heb gezet. Het extra menu bleef namelijk in beeld staan zelfs als het andere menu weg was, na heel veel manieren proberen met css en javascript werkt het menu nu zoals ik bedoel. Het was makkelijker om al de elementen op de goede plek te krijgen in het begin was het nog wel moeilijk, maar als je door hebt hoe het werkt kan het zelfs leuk worden. Ik was begonnen in de blauwe piste en denk dat ik wel naar de rode piste ben gegaan, ook al heb ik nog veel moeite met JavaScript en al de mogelijkheden die css heeft.  -
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/home.hover.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/home2.hover.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/menu.hover.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/home.focus.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/menu.extra.png) 
+![screenshot(s) die een goed beeld geven van hoe het met de website gaat](images/recipe.hover.png) 
 
 
 ## Voortgang 3 (week 6)
